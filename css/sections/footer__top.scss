@@ -17,14 +17,15 @@
     }
 }
 .heading__text {
-    font: bold 14px 'Ubuntu';
+    font-weight: bold;
     color: #a5a5a5;
     text-transform: uppercase;
     margin-bottom: 25px;
     letter-spacing: 4px;
 }
 .title {
-    font: 300 60px 'Ubuntu'; 
+    font-size: 60px; 
+    font-weight: 300;
     color: $content_text;
     text-transform: capitalize;
 }

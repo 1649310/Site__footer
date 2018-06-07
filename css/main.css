@@ -447,14 +447,15 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 100%; }
 
 .heading__text {
-  font: bold 14px 'Ubuntu';
+  font-weight: bold;
   color: #a5a5a5;
   text-transform: uppercase;
   margin-bottom: 25px;
   letter-spacing: 4px; }
 
 .title {
-  font: 300 60px 'Ubuntu';
+  font-size: 60px;
+  font-weight: 300;
   color: #4c4c4c;
   text-transform: capitalize; }
 
@@ -479,7 +480,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #a1a3a6; }
 
 .form__input {
-  font-size: 16px;
+  font: 16px 'Ubuntu';
   color: #4c4c4c;
   outline: 0;
   border: 1px solid #ccc; }
@@ -514,7 +515,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 55px; }
 
 .btn {
-  font-size: 16px;
+  font: 16px 'Ubuntu';
   color: #fff;
   padding: 19px 40px;
   background: #1abc9c;
@@ -528,23 +529,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .question__list {
   display: flex;
-  justify-content: space-evenly;
-  position: relative; }
+  justify-content: space-evenly; }
 
 .question__item {
-  text-align: center; }
-  .question__item:after {
-    content: '';
-    display: inline-block;
-    width: 1px;
-    height: 123px;
-    position: absolute;
-    background: #4c4c4c;
-    left: 50%;
-    transform: translate(-50%);
-    top: 14px; }
-  .question__item:last-child::after {
-    display: none; }
+  text-align: center;
+  border-right: 1px solid #4c4c4c;
+  padding-right: 120px; }
+  .question__item:last-child {
+    border-right: 0;
+    padding-right: 0; }
 
 .question__icon {
   display: inline-block;
@@ -571,21 +564,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__bottom {
   background-color: #1abc9c;
-  padding: 45px 0 45px 230px;
-  text-align: left; }
-
-.footer__bottom-text {
-  color: #fff;
-  width: 54%; }
+  padding: 45px 0 45px 105px;
+  text-align: left;
+  color: #fff; }
 
 .text__top {
-  font: 46px 'Ubuntu';
+  font-size: 46px;
   text-transform: uppercase; }
 
 .text__bottom {
-  font: 16px 'Ubuntu'; }
+  font-size: 16px; }
 
 .top__span {
-  font: bold 46px 'Ubuntu'; }
+  font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */

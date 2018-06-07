@@ -1,20 +1,17 @@
 .footer__bottom {
     background-color: $green;
-    padding: 45px 0 45px 230px;
+    padding: 45px 0 45px 105px;
     text-align: left;
-
-}
-.footer__bottom-text {
     color: $bottom_text;
-    width: 54%;
 }
+
 .text__top {
-    font: 46px 'Ubuntu'; 
+    font-size: 46px; 
     text-transform: uppercase;
 }
 .text__bottom {
-    font:  16px 'Ubuntu'; 
+    font-size: 16px; 
 }
 .top__span {
-    font: bold 46px 'Ubuntu';
+    font-weight: 700;
 }

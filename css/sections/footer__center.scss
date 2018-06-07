@@ -19,7 +19,7 @@
 }
 
 .form__input {
-    font-size: 16px;
+    font: 16px 'Ubuntu';
     color: $content_text;
     outline: 0;
     border: 1px solid #ccc;
@@ -64,7 +64,7 @@
 }
 
 .btn {
-    font-size:  16px;
+    font: 16px 'Ubuntu';
     color: $bottom_text;
     padding: 19px 40px;
     background: $green;
@@ -80,27 +80,17 @@
 .question__list {
     display: flex;
     justify-content: space-evenly;
-    position: relative;
+  
 }
 
 .question__item {
     text-align: center;
+    border-right: 1px solid $content_text;
+    padding-right: 120px;
 
-    &:after {
-        content: '';
-        display: inline-block;
-        width: 1px;
-        height: 123px;
-        position: absolute;
-        background: $content_text;
-        left: 50%;
-        transform: translate(-50%);
-        top: 14px;  
-        
-    }
-
-    &:last-child::after {
-        display: none;
+    &:last-child {
+        border-right: 0;
+        padding-right: 0;
     }
 }
 .question__icon {
