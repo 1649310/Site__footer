@@ -18,12 +18,13 @@
 }
 .heading__text {
     font: bold 14px 'Ubuntu';
-    color: #c9c9c9;
+    color: #a5a5a5;
     text-transform: uppercase;
     margin-bottom: 25px;
+    letter-spacing: 4px;
 }
 .title {
-    font: 60px 'Ubuntu'; 
+    font: 300 60px 'Ubuntu'; 
     color: $content_text;
     text-transform: capitalize;
 }

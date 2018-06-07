@@ -1,8 +1,3 @@
-.footer__center-top:after, .form__top:after {
-  content: "";
-  display: block;
-  clear: both; }
-
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -453,17 +448,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading__text {
   font: bold 14px 'Ubuntu';
-  color: #c9c9c9;
+  color: #a5a5a5;
   text-transform: uppercase;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  letter-spacing: 4px; }
 
 .title {
-  font: 60px 'Ubuntu';
+  font: 300 60px 'Ubuntu';
   color: #4c4c4c;
   text-transform: capitalize; }
 
 .title__span {
   color: #1abc9c; }
+
+.footer__center-top::after, .form__top::after {
+  content: "";
+  display: block;
+  clear: both; }
 
 .center__form {
   float: left;
@@ -474,18 +475,23 @@ h1, h2, h3, h4, h5, h6 {
   float: right;
   width: 45%;
   padding-left: 45px;
-  font: 16px 'Ubuntu';
+  font-size: 16px;
   color: #a1a3a6; }
+
+.form__input {
+  font-size: 16px;
+  color: #4c4c4c;
+  outline: 0;
+  border: 1px solid #ccc; }
+  .form__input:focus {
+    border: 1px solid #4c4c4c; }
 
 .form__input-top {
   float: left;
   width: 295px;
   padding: 18px 12px;
   margin-bottom: 15px;
-  margin-right: 30px;
-  font: 16px 'Ubuntu';
-  color: #4c4c4c;
-  outline: 0; }
+  margin-right: 30px; }
   .form__input-top:last-child {
     margin-right: 0; }
 
@@ -493,33 +499,28 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 100%;
   padding: 18px 12px;
-  margin-bottom: 30px;
-  font: 16px 'Ubuntu';
-  color: #4c4c4c;
-  outline: 0; }
+  margin-bottom: 30px; }
 
 .form__input-bottom {
   display: block;
   width: 100%;
   height: 198px;
   padding: 12px;
-  font: 16px 'Ubuntu';
   resize: none;
-  margin-bottom: 70px;
-  color: #4c4c4c;
-  outline: 0; }
+  margin-bottom: 70px; }
 
 .form__btn {
   text-align: left;
   margin-bottom: 55px; }
 
 .btn {
-  font: 16px 'Ubuntu';
+  font-size: 16px;
   color: #fff;
   padding: 19px 40px;
   background: #1abc9c;
   border: 0;
-  outline: 0; }
+  outline: 0;
+  cursor: pointer; }
 
 .footer__center-bottom {
   background: #f7f7f7;
@@ -527,7 +528,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .question__list {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  position: relative; }
+
+.question__item {
+  text-align: center; }
+  .question__item:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 123px;
+    position: absolute;
+    background: #4c4c4c;
+    left: 50%;
+    transform: translate(-50%);
+    top: 14px; }
+  .question__item:last-child::after {
+    display: none; }
 
 .question__icon {
   display: inline-block;
@@ -539,15 +556,14 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 100%; }
 
 .question__text {
-  font: bold 18px 'Ubuntu';
+  font-size: 18px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #4c4c4c;
-  margin-bottom: 20px;
-  text-align: center; }
+  margin-bottom: 20px; }
 
 .question__contact {
-  font: 18px 'Ubuntu';
-  text-align: center;
+  font-size: 18px;
   color: #1abc9c; }
 
 .question__contact-time {
@@ -555,12 +571,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__bottom {
   background-color: #1abc9c;
-  padding: 40px 100px;
+  padding: 45px 0 45px 230px;
   text-align: left; }
 
 .footer__bottom-text {
   color: #fff;
-  width: 60%; }
+  width: 54%; }
 
 .text__top {
   font: 46px 'Ubuntu';
