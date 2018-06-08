@@ -462,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {
 .title__span {
   color: #1abc9c; }
 
-.footer__center-top::after, .form__top::after {
+.clearfix::after {
   content: "";
   display: block;
   clear: both; }
@@ -553,10 +553,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: uppercase;
   color: #4c4c4c;
-  margin-bottom: 20px; }
+  margin-bottom: 15px; }
 
 .question__contact {
   font-size: 18px;
+  font-weight: 300;
   color: #1abc9c; }
 
 .question__contact-time {
@@ -570,6 +571,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .text__top {
   font-size: 46px;
+  font-weight: 300;
   text-transform: uppercase; }
 
 .text__bottom {

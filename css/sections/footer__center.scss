@@ -1,4 +1,4 @@
-.footer__center-top::after, .form__top::after {
+.clearfix::after {
     content: "";
     display: block;
     clear: both;
@@ -111,12 +111,13 @@
     font-weight: 700;
     text-transform: uppercase;
     color: $content_text;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     
 }
 
 .question__contact {
     font-size: 18px;
+    font-weight: 300;
     color: $green;
 }
 
